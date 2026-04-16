@@ -1,0 +1,17 @@
+# Dependency folders
+node_modules/
+**/node_modules/
+
+# Environment secrets
+.env
+**/.env
+
+# Angular/Build output
+.angular/
+**/dist/
+**/.angular/
+
+# OS & IDEs
+.DS_Store
+.vscode/
+**/.vscode/
