@@ -15,3 +15,15 @@ This repository tracks my progress from basic Gemini API integration to advanced
 - **Frontend:** Angular
 - **Backend:** Node.js (Express)
 - **AI:** Gemini 1.5 Flash/Pro, LangChain
+
+## Learnings
+
+- SDK (@google/generative-ai) uses v1beta endpoints
+- New Gemini models require v1 endpoints
+- Switched to REST API for stability
+- Handled real-world issues:
+  - API enablement
+  - invalid keys
+  - model availability
+  - quota limits
+  - retry logic
