@@ -10,7 +10,7 @@ const express_server_app = express();
 express_server_app.use(express.json());
 express_server_app.use(cors());
 
-express_server_app.post("/api/chat", chatRoute);
+express_server_app.use("/api/chat", chatRoute);
 
 const PORT = process.env.PORT || 3000;
 express_server_app.listen(PORT, () => {
