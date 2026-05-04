@@ -1,1 +1,15 @@
-<p>chat works!</p>
+<div class="showMessagesArea">
+  <div *ngFor="let msg of messagesArray">
+    {{ msg }}
+  </div>
+</div>
+
+<div class="userInputArea">
+  <input
+    type="text"
+    placeholder="Type here ..."
+    [(ngModel)]="userInput"
+    (keyup.enter)="sendMessage()"
+  />
+  <button (click)="sendMessage()">Send</button>
+</div>
