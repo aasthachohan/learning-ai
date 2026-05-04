@@ -19,9 +19,12 @@ router.post("/", async (req, res) => {
     const reply = await callLLM(prompt);
     res.json({ reply });
   } catch (err) {
-    console.error("FULL ERROR:", err);
-    console.error("ERROR RESPONSE:", err.response?.data);
-
+    if (err.response && err.response.status === 429) {
+      return res.status(429).json({
+        error: err.message,
+        details: err.response?.data
+      });
+    }
     res.status(500).json({
       error: err.message,
       details: err.response?.data,
