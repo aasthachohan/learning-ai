@@ -1,0 +1,7 @@
+// data source
+
+Angular is a frontend framework developed by Google.
+Node.js is used for backend development.
+RAG stands for Retrieval Augmented Generation.
+Express is a backend framework for Node.js.
+Angular is currently on v21.

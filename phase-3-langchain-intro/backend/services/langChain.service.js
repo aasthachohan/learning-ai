@@ -1,0 +1,1 @@
+// main file - read file, split file into chunks, create context, format prompt, invoke gemini model
